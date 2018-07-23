@@ -64,7 +64,7 @@ void * malloc_hook (size_t size, void *caller)
     sprintf(res, "%p", result);
     sprintf(cal, "%p", caller);
     create_db();
-        update_db(1, size, res, cal);
+    update_db(1, size, res, cal);
 
     hook_active = 1;
     return result;
